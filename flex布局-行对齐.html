@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father{
+            width: 500px;
+            height: 500px;
+            border: 1px solid red;
+            display: flex;
+            /* 让flex内的盒子支持自动换行，如果容器位置不够的话 */
+            flex-wrap: wrap;
+            /* 如果不换行将会自动压缩挤在同一行 */
+            /* flex-wrap: nowrap; 默认值，不换行 */
+        }
+        .father div{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 10px;
+
+            /* 可以和justify-content那样设置对齐方式，用法一样
+            只不过justify是主轴，align是副轴
+            */
+            align-content: center;
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

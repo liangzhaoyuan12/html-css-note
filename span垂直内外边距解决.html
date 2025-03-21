@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            /* 解决方案1:变成行内块 */
+            display: inline-block;
+            vertical-align: middle;
+            margin: 10px 10px;
+        }
+        span{
+            /* 解决方案2:使用行高*/
+            vertical-align: middle;
+            padding: 10px 10px;
+            line-height: 10px;
+        }
+    </style>
+</head>
+<body>
+    <span>111</span><span>222</span>
+</body>
+</html>

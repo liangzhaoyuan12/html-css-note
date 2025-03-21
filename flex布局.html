@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* justifu-content修改主轴，align-itms/self修改侧轴 */
+        /* 在默认的flex中，主轴是x轴，侧轴是y轴 */
+        /* 如果父块中设定了display方式为flex，那么默认情况下
+        父块中的子块都是沿着x轴排布的
+        所以在flex中，默认主轴是x轴，侧轴是y轴
+        */
+        div.father{
+            /* 创建flex容器 */
+            display: flex;
+            /* 沿主轴居中排列 */
+            justify-content: center;
+            /* 盒子贴着两端的墙壁，中间的空白区域平分 */
+            /* justify-content: space-between; */
+            /* 将空间除盒子数，盒子之间的距离为两侧离墙最近的盒子的距离的两倍 */
+            /* justify-content: space-around; */
+            /* 将盒子间的距离等于两侧离墙最近的盒子的距离 */
+            /* justify-content: space-evenly; */
+            align-items: center;
+            border: 1px solid black;
+            height: 200px;
+        }
+        /* 表示侧轴上的位置
+        align-items是给容器用的，设定容器内每一个盒子
+        align-self是给每一个盒子用的，覆盖容器内的align-items
+        */
+        div.son1{
+            /* 只有在没有设置高的时候才会默认填充，表示填充，如果没设置就是默认填充 */
+            /* align-self: stretch; */
+            /* 表示在侧轴上居中，这里的侧轴也就是y轴 */
+            align-self: center;
+            height: 100px;
+            width: 100px;
+            background-color: red
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son1"></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

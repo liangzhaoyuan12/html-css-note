@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.d1 {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(7, 141, 236);
+            background-image: url(./img/wechat_logo.png);
+            /* 设置背景的大小 */
+            background-size: 100px 100px;
+            /* 
+            no-repeat: 不平铺
+            repeat-x: 水平平铺
+            repeat-y: 垂直平铺
+            repeat: 平铺（默认效果）
+            */
+            background-repeat: no-repeat;
+            /* 设置背景的位置 需要两个参数，如果第二个参数为空，那么第二参数的位置默认居中*/
+            /* background-position: 0 0; */
+            /* 左上 */
+            /* background-position: left top; */
+            /* 右下 */
+            /* background-position: right bottom; */
+            /* 居中 */
+            background-position: center center;
+
+            /* 设置背景的大小 */
+            /* cover: 背景图片等比例缩放，直到覆盖整个容器，但是图片的宽高比可能会发生改变 */
+            /* contain: 背景图片等比例缩放，直到图片的宽高比和容器的宽高比一致，但是图片可能没有覆盖整个容器 */
+            background-size: contain;
+            /* background-size: cover;*/
+        }
+        body {
+            background-image: url(./img/wechat_logo.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            /* 将背景图固定，确保背景图不会随着元素的滚动和滚动 */
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="d1">
+        
+    </div>
+</body>
+</html>

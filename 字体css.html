@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p1{
+            /* 字体，第一个字体如果电脑没有会顺位继承 */
+            font-family: 'Times New Roman', Times, serif;
+            /* 字体大小 */
+            font-size: 20px;
+            /* 字体粗细 */
+            font-weight: bold;
+            /* 斜体 */
+            font-style: italic;
+            /* 下划线 */
+            text-decoration: underline;
+            /* 行高 */
+            /* line-height: 30px; */
+            /* 行高为字体大小的两倍 */
+            line-height: 2em;
+            /* 如果想要文字的高度在块中居中，可以让行高等于块的高度 */
+
+
+            /* 文本缩进，可以选择px，也可以选择em，2em代表缩进两个当前字号的大小 */
+            /* 换人话来说就是开头空两格 */
+            text-indent: 2em;
+
+            /* 文本对齐方式 */
+            /* left：左对齐 */
+            /* right：右对齐 */
+            /* center：居中对齐 */
+            text-align: center;
+
+            /* 颜色可以用英文关键字表示 */
+            /* color: red; */
+            /* 颜色也可以用rgb */
+            /* color: rgb(255, 0, 0); */
+            /* 颜色也可以用十六进制 */
+            /* color: #ff0000; */
+            /* 颜色也可以用hsl */
+            /* color: hsl(0, 100%, 50%); */
+            /* hsl(0, 100%, 50%)：h：色调，0表示红色，120表示绿色，240表示蓝色，360表示红色 */
+            color: brown;
+        }
+        /* 表示默认状态 */
+        div > a{
+            color: darkgoldenrod;
+        }
+        /* 表示鼠标悬停时的特征 */
+        div > a:hover{
+            color: red;
+        }
+        /* 表示鼠标点击时的特征 */
+        div > a:active{
+            color: blue;
+        }
+        /* 表示鼠标访问后的特征 */
+        div > a:visited{
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <p class="p1">我是一个段落</p>
+    </div>
+    <div >
+        <a href="#">我是超链接</a>
+    </div>
+</body>
+</html>

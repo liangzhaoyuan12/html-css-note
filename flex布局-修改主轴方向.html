@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.father{
+            display: flex;
+            flex-direction: column;
+            height: 300px;
+            border: 1px solid red;
+            /* 修改主轴方向，默认情况下是水平row */
+            /* flex-direction: row;*/
+            /* 此时justify主轴变成了y轴 */
+            /* justify-content: center; */
+            /* 此时align侧轴变成了x轴 */
+            /* align-items: center; */
+
+        }
+        div.father div{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

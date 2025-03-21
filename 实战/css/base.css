@@ -1,0 +1,139 @@
+/* 设置全局字体和字号 */
+body {
+    font-family: 'Arial', sans-serif; /* 使用Arial字体，如果不可用则使用sans-serif作为备选 */
+    font-size: 16px; /* 默认字号为16px */
+    line-height: 1.6; /* 行高为1.6倍字号 */
+    color: #333; /* 文字颜色为深灰色 */
+    background-color: #f9f9f9; /* 背景色为浅灰色 */
+}
+
+/* 设置标题的样式 */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Helvetica', sans-serif; /* 标题使用Helvetica字体 */
+    line-height: 1.2; /* 标题行高为1.2倍字号 */
+    margin-bottom: 1em; /* 标题下方留出1em的间距 */
+}
+
+h1 {
+    font-size: 2.5em; /* h1字号 */
+}
+
+h2 {
+    font-size: 2em; /* h2字号 */
+}
+
+h3 {
+    font-size: 1.75em; /* h3字号 */
+}
+
+h4 {
+    font-size: 1.5em; /* h4字号 */
+}
+
+h5 {
+    font-size: 1.25em; /* h5字号 */
+}
+
+h6 {
+    font-size: 1em; /* h6字号 */
+}
+
+/* 设置段落的样式 */
+p {
+    margin-bottom: 1em; /* 段落下方留出1em的间距 */
+}
+
+/* 设置链接的样式 */
+a {
+    color: #007BFF; /* 链接颜色为蓝色 */
+    transition: color 0.3s ease; /* 链接颜色过渡效果 */
+}
+
+a:hover {
+    color: #0056b3; /* 鼠标悬停时链接颜色变深 */
+}
+
+/* 设置按钮的样式 */
+button {
+    font-family: inherit; /* 继承父元素的字体 */
+    font-size: inherit; /* 继承父元素的字号 */
+    padding: 0.5em 1em; /* 内边距 */
+    background-color: #007BFF; /* 背景色为蓝色 */
+    color: #fff; /* 文字颜色为白色 */
+    border-radius: 4px; /* 圆角 */
+    cursor: pointer; /* 鼠标悬停时显示手型 */
+    transition: background-color 0.3s ease; /* 背景色过渡效果 */
+}
+
+button:hover {
+    background-color: #0056b3; /* 鼠标悬停时背景色变深 */
+}
+
+/* 设置列表的样式 */
+ul, ol {
+    margin-bottom: 1em; /* 列表下方留出1em的间距 */
+    padding-left: 2em; /* 列表左侧缩进 */
+}
+
+li {
+    margin-bottom: 0.5em; /* 列表项下方留出0.5em的间距 */
+}
+
+/* 设置表格的样式 */
+table {
+    width: 100%; /* 表格宽度为100% */
+    border-collapse: collapse; /* 合并边框 */
+    margin-bottom: 1em; /* 表格下方留出1em的间距 */
+}
+
+th, td {
+    padding: 0.5em; /* 单元格内边距 */
+    text-align: left; /* 文字左对齐 */
+    border: 1px solid #ddd; /* 单元格边框 */
+}
+
+th {
+    background-color: #f4f4f4; /* 表头背景色为浅灰色 */
+    font-weight: bold; /* 表头文字加粗 */
+}
+
+/* 设置图片的样式 */
+img {
+    max-width: 100%; /* 图片最大宽度为100% */
+    height: auto; /* 高度自动调整 */
+    display: block; /* 图片显示为块级元素 */
+    margin-bottom: 1em; /* 图片下方留出1em的间距 */
+}
+
+/* 设置代码块的样式 */
+pre, code {
+    font-family: 'Courier New', monospace; /* 使用等宽字体 */
+    background-color: #f4f4f4; /* 背景色为浅灰色 */
+    padding: 0.5em; /* 内边距 */
+    border-radius: 4px; /* 圆角 */
+    border: 1px solid #ddd; /* 边框 */
+}
+
+pre {
+    white-space: pre-wrap; /* 保留空白符并换行 */
+    word-wrap: break-word; /* 长单词换行 */
+}
+
+/* 设置响应式布局 */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* 在小屏幕上减小字号 */
+    }
+
+    h1 {
+        font-size: 2em; /* 在小屏幕上减小h1字号 */
+    }
+
+    h2 {
+        font-size: 1.75em; /* 在小屏幕上减小h2字号 */
+    }
+
+    button {
+        width: 100%; /* 在小屏幕上按钮占满宽度 */
+    }
+}

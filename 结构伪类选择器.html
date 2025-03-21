@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 格式：
+        选择器:伪类{
+            样式
+        }
+            伪类选择器用于向某些选择器添加特殊效果
+        */
+        /* 结构伪类选择器 */
+        /* 选择第一个子元素 */
+        ul li:first-child{
+            color: red;
+        }
+        /* 选择最后一个子元素 */
+        ul li:last-child{
+            color: blue;
+        }
+        /* 选择第n个子元素 */
+        ul li:nth-child(3){
+            color: green;
+        }
+        /* 选择第n个子元素，n从0开始 */
+        ul li:nth-child(2n){
+            color: pink;
+        }
+        /* 选择第n个子元素，n从0开始 */
+        ul li:nth-child(2n+1){
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+    </ul>
+</body>
+</html>

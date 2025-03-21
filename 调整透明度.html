@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 600px;
+            height: 600px;
+            background-color: pink;
+            border: 1px solid black;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: all 0.5s;
+        }
+        img:hover{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            border-radius: 50%;
+            /* 0表示透明，1表示不透明，透明度选在0和1之间 */
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="./img/wechat_logo.png" alt="">
+    </div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+div.head{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* left和right都是flex */
+div.head div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 0;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+    transition: all 0.5s;
+}
+.logo img:hover{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/* nav是flex */
+.nav{
+    display: flex;
+    padding-left: 50px;
+    height: 100px;
+    align-items: center;
+}
+
+.nav li{
+    margin-right: 50px;
+}
+
+/* nav内的最后一个li取消右间距 */
+.nav li:last-child{
+    margin-right: 0;
+}
+.nav li a{
+    color: darkgoldenrod;
+    transition: all 0.5s;
+    padding-bottom: 10px;
+}
+.nav li a:hover{
+    border-bottom: 2px solid darkgoldenrod;
+}
+.right{
+    /* display: flex;
+    justify-content: flex-end; */
+    align-items: center;
+    height: 100px;
+}
+.right ul{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    padding-right: 50px;
+}
+.right li:last-child{
+    margin-left: 50px;
+}
+.right li a{
+    color:palevioletred;
+    justify-self: end;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    height: 350px;
+}
+
+.helper{
+    display: flex;
+    justify-content: space-between;
+    padding:  50px;
+}
+.lefthelper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.lefthelper dl{
+    margin-right: 50px;
+}
+
+.lefthelper > dl:last-child{
+    margin-right: 0px;
+}
+
+.lefthelper dt{
+    margin-bottom: 25px;
+}
+.lefthelper dd{
+    margin-bottom: 10px;
+}
+.lefthelper dd:last-child{
+    margin-bottom: 0px;
+}
+
+.righthelper{
+    
+}
+.righthelper img{
+    width: 100px;
+    height: 100px;
+    transition: all 0.5s;
+}
+.righthelper img:hover{
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    position: relative;
+}

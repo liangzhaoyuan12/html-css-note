@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 格式：
+        div选择器::before{
+            content: "内容";
+        }
+        div选择器::after{
+            content: "内容";
+        }
+            必须要有content内容属性，否则伪元素不起作用
+        */
+        div.d1::before{
+            content: "老鼠";
+            color: red;
+        }
+        div.d1::after{
+            content: "大米";
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="d1">爱</div>
+</body>
+</html>

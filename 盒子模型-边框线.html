@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 边框线 solid实线 dashed虚线 dotted点线 */
+        /* border: 10px solid black; */
+        div {
+            margin: 10px;
+        }
+        div.c1{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* 边框线 solid实线 dashed虚线 dotted点线 */
+            border: 10px solid black;
+            /* 如果不指定边框线border的方向，那么默认是四周都有边框线 */
+        }
+        div.c2{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-top: 10px solid black;
+            /* 上 */
+        }
+        div.c3{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-bottom: 10px solid black;
+            /* 下 */
+        }
+        div.c4{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-left: 10px solid #000;
+            /* 左 */
+        }
+        div.c5{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-right: 10px solid #000;
+            /* 右 */
+        }
+        
+    
+    </style>
+</head>
+<body>
+    <div class="c1">this is a div</div>
+    <div class="c2">this is the second div</div>
+    <div class="c3">this is the third div</div>
+    <div class="c4">this is the fourth div</div>
+    <div class="c5">this is the fifth div</div>
+</body>
+</html>

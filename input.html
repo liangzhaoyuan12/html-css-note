@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    文本框：<input type="text" placeholder="请输入内容"><br>
+    密码框：<input type="password" placeholder="请输入密码"><br>
+    单选框：<input type="radio"><br>
+    多选框：<input type="checkbox"><br>
+    上传文件：<input type="file"><br>
+    <br><br>
+    <!-- name表示表单提交的键值，value表示表单提交的值，如果两个单选框是同一个name，则只能选择一个 -->
+    <!-- 如果在选框中加入了checked属性，则默认选中 -->
+    性别：<input type="radio" name="sex" value="男" checked>男
+    <input type="radio" name="sex" value="女">女<br>
+    <!-- 如果在选框中加入了checked属性，则默认选中 -->
+    爱好：<input type="checkbox" name="hobby" value="篮球" checked>篮球
+    <input type="checkbox" name="hobby" value="足球">足球
+
+    <br><br>
+    <!-- 在默认情况下，file类型的input标签只能选择一个文件，如果想要选择多个文件，则需要在input标签中加入multiple属性 -->
+    <input type="file" multiple><br>
+    支持多文件上传：<input type="submit" value="提交">
+</body>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 在我们前面的input例子中，我们如果要选择input的单选必须要点击框框 -->
+    <!-- 现在我们想要扩大点击范围到文本，让我们点击文本也可以选择单选 -->
+    <!-- 我们可以使用label标签的for属性，将label的for属性值和input的id属性值设置为一样，这样点击文本也可以选择单选 -->
+    <input type="radio" name="sex" id="male">
+    <label for="male">男</label>
+    <br>
+    <input type="radio" name="sex" id="female">
+    <label for="female">女</label>
+    <br>
+    <!-- 上面的写法太麻烦了，可以直接讲input放在label内，这样点击文本也可以选择单选 -->
+    <label ><input type="radio" name="sex" id="unknown">不知道</label>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father{
+            display: flex;
+            width: 600px;
+            height: 600px;
+            background-color: brown;
+        }
+        .father div{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+        /* 修改的占比权重修改的是主轴的方向 */
+        .father div:nth-child(1){
+            flex: 1; 
+            /* 占比权重1 */
+        }
+        .father div:nth-child(2){
+            flex: 2;
+            /* 占比权重2 */
+        }
+        .father div:nth-child(3){
+            flex: 3
+            /* 占比权重3 */
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

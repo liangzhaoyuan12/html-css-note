@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 600px;
+            height: 600px;
+            background-color: pink;
+            border: 1px solid black;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /* 第一个参数填写要过渡动画的属性
+            可以是height也可以是weight
+            如果是all的话就表示是全部
+            第二个参数是过渡动画的时间
+            过渡动画是加在标签本身，而不是在hover里面
+            */
+            transition: all 0.5s;
+        }
+        img:hover{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="./img/wechat_logo.png" alt="">
+    </div>
+</body>
+</html>
