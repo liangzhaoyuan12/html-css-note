@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        div:first-child{
+            /* 
+            第一个参数是渐变方向，可选，不选默认向右
+            第二个参数是渐变的起始颜色
+            第三个参数是渐变的结束颜色
+            颜色可以填写多个，在颜色的后的参数可以填写颜色的位置，例如：red 50%，blue 100%
+            */
+            background-image: linear-gradient(
+                to right,
+                red,
+                blue
+                );
+        }
+        div:nth-child(2){
+            /* 
+            第一个参数是：半径 at 圆心位置
+            半径可以是两条，如果两条的话效果就是椭圆
+             */
+            background-image: radial-gradient(
+                circle,
+                red,
+                blue
+                );
+        }
+    </style>
+</head>
+<body>
+    <div>线性渐变</div>
+    <div>径向渐变</div>
+</body>
+</html>

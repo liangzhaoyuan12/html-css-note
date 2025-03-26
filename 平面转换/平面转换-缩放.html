@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            /* 让溢出内容隐藏 */
+            overflow: hidden;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            transition: all 1s;
+        }
+        img:hover{
+            /* 如果只填写一个参数表示x轴和y轴都缩放同样的倍数 */
+            transform: scale(1.5);
+            /* 也可以分别放入两个参数分别表示x轴和y轴的缩放倍数
+            第一个参数放入的值表示x轴的缩放倍数
+            第二个参数放入的值表示y轴的缩放倍数
+            */
+            /* transform: scale(1.5,1.5); */
+        }
+    </style>
+</head>
+<body>
+    <div><img src="../img/wechat_logo.png" alt="" srcset=""></div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            transition: all 1s;
+        }
+        div:hover{
+            /* 需要先平移再旋转 */
+            transform: translate(100px,100px) rotate(45deg);
+            /* css默认将transform的第一个属性作为参考，
+            如果将旋转放在前面的话，
+            平移的时候就会因为前面的旋转而不断改变方向，
+            使平移方向在不断的变化 */
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

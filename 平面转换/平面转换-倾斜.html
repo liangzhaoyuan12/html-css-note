@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            transition: all 1s;
+        }
+        div:hover{
+            /* 单位是deg，第一个参数是x轴，第二个参数是y轴 */
+            transform: skew(30deg,30deg);
+            /* 如果参数只有一个那么默认是倾斜x轴方向*/
+            transform: skew(30deg);
+            /* 也可以单独设置x轴和y轴 */
+            transform: skewX(30deg), skewY(30deg); 
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
