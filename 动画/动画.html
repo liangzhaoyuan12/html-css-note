@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        @keyframes move{
+            from{
+                transform: translate(0,0);
+            }
+            to{
+                transform: translate(100px,100px);
+            }
+            /* 动画可以有另外一种写法，可以指定在动画的哪个时间点，动画的样式是什么
+            0%{
+                transform: translate(0,0);
+            }
+            100%{
+                transform: translate(100px,100px);
+            }
+            */
+        }
+        @keyframes move2{
+            
+            0%{
+                transform: translate(0,0);
+            }
+            100%{
+                transform: translate(100px,100px);
+            }
+           
+        }
+        div:hover{
+            /* 
+            参数：动画名称 动画时长 运动曲线 延迟时间 重复次数 动画方向
+            其中动画名称和时长是必须的，其他是可选的
+            不一定要按照顺序写
+            第一个时间的参数是动画时长，第二个时间参数是延迟时间
+            */
+            animation: move 1s linear 1s infinite alternate ;
+            /* 
+            在默认情况下，动画是非线性的
+            linear:线性，steps(2):分两步完成动画
+            infinite:无限循环
+            alternate表示动画会往复运动
+            forwards:动画结束后，保持动画结束时的状态
+            backwards:动画结束后，回到动画开始时的状态，不指定则默认
+
+            */
+        }
+        div:hover{
+            /* 动画可以同时指定多个 */
+            animation:
+                move 1s linear 1s infinite alternate,
+                move2 1s linear 1s infinite alternate ;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
